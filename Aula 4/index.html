@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Adoção de Pets</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Adote um Amigo</h1>
+        </header>
+
+        <main>
+            <section>
+
+                <h2>Formulário de Cadastro para Adoção</h2>
+
+                <form action="https://postman-echo.com/post" method="post">
+
+                    <p>Preencha o formulário abaixo para se candidatar à adoção de um pet.</p>
+
+                    <fieldset>
+                        <legend>Dados do Candidato</legend>
+
+                        <div>
+                            <label for="nome_id">Nome completo:</label>
+                            <input
+                                id="nome_id"
+                                name="nome"
+                                type="text"
+                                placeholder="Digite seu nome..."
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="email_id">Email:</label>
+                            <input
+                                id="email_id"
+                                name="email"
+                                type="email"
+                                placeholder="seuemail@exemplo.com"
+                                pattern=".+@.+\..+"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="telefone_id">Telefone:</label>
+                            <input
+                                id="telefone_id"
+                                name="telefone"
+                                type="tel"
+                                placeholder="(11) 91234-5678"
+                                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                                title="Use o formato (11) 91234-5678"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="idade_id">Idade:</label>
+                            <input
+                                id="idade_id"
+                                name="idade"
+                                type="number"
+                                placeholder="Digite sua idade...">
+                        </div>
+
+                        <div>
+                            <label for="cidade_id">Cidade:</label>
+                            <input
+                                id="cidade_id"
+                                name="cidade"
+                                type="text"
+                                placeholder="Digite sua cidade...">
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Moradia</legend>
+
+                        <div>
+                            <label for="tipo_moradia_id">Tipo de moradia:</label>
+
+                            <select
+                                id="tipo_moradia_id"
+                                name="tipo_moradia">
+
+                                <option value="casa">Casa</option>
+                                <option value="apartamento">Apartamento</option>
+                                <option value="chacara">Chácara/Sítio</option>
+
+                            </select>
+                        </div>
+
+                        <div>
+                            <input
+                                id="tem_quintal_id"
+                                name="tem_quintal"
+                                type="checkbox"
+                                value="sim">
+
+                            <label for="tem_quintal_id">
+                                Minha moradia tem quintal ou área externa
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferência de Pet</legend>
+
+                        <div>
+                            <p>Que tipo de pet você quer adotar?</p>
+
+                            <input
+                                id="pet_cachorro"
+                                name="tipo_pet"
+                                type="radio"
+                                value="cachorro">
+
+                            <label for="pet_cachorro">Cachorro</label>
+
+                            <input
+                                id="pet_gato"
+                                name="tipo_pet"
+                                type="radio"
+                                value="gato">
+
+                            <label for="pet_gato">Gato</label>
+
+                            <input
+                                id="pet_outro"
+                                name="tipo_pet"
+                                type="radio"
+                                value="outro">
+
+                            <label for="pet_outro">Outro</label>
+
+                        </div>
+
+                        <div>
+                            <label for="porte_id">Porte preferido:</label>
+
+                            <select
+                                id="porte_id"
+                                name="porte">
+
+                                <option value="pequeno">Pequeno</option>
+                                <option value="medio">Médio</option>
+                                <option value="grande">Grande</option>
+
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Experiência com Animais</legend>
+
+                        <div>
+                            <input
+                                id="ja_teve_id"
+                                name="experiencia"
+                                type="checkbox"
+                                value="ja_teve_pet">
+
+                            <label for="ja_teve_id">
+                                Já tive pet antes
+                            </label>
+                        </div>
+
+                        <div>
+                            <input
+                                id="outros_pets_id"
+                                name="experiencia"
+                                type="checkbox"
+                                value="tem_outros_pets">
+
+                            <label for="outros_pets_id">
+                                Já tenho outros pets em casa
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sobre você</legend>
+
+                        <div>
+                            <label for="motivacao_id">
+                                Por que você quer adotar um pet?
+                            </label>
+
+                            <textarea
+                                id="motivacao_id"
+                                name="motivacao"
+                                placeholder="Conte um pouco sobre sua motivação..."></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Confirmação</legend>
+
+                        <div>
+                            <input
+                                id="termos_id"
+                                name="termos"
+                                type="checkbox"
+                                required>
+
+                            <label for="termos_id">
+                                Confirmo que tenho condições de cuidar do animal responsavelmente.
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <div>
+                        <button type="reset">
+                            Limpar Dados
+                        </button>
+
+                        <button type="submit">
+                            Enviar Cadastro
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados &copy;</p>
+        </footer>
+
+    </body>
+</html>
