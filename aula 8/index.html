@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/index.js" defer></script>
+  <title>Formulário JS</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário de cadastro</h1>
+  </header>
+  <main>
+    <h2>Cadastro</h2>
+    <form id="cadastro" novalidate onsubmit="executar(event)">
+      <label for="nome">Nome*</label>
+      <input type="text" id="nome">
+      <p id="erro-nome" class="oculto"></p>
+
+      <label for="idade">Idade*</label>
+      <input type="number" id="idade">
+      <p id="erro-idade" class="oculto"></p>
+
+      <label for="celular">Celular*</label>
+      <input type="text" id="celular" maxlength="15" oninput="mascararCelular(event)">
+      <p id="erro-celular" class="oculto"></p>
+
+
+      <label for="email">Email*</label>
+      <input type="email" id="email">
+      <p id="erro-email" class="oculto"></p>
+
+
+      <label for="cpf">CPF*</label>
+      <input type="text" id="cpf" maxlength="14" oninput="mascararCpf(event)">
+      <p id="erro-cpf" class="oculto"></p>
+
+      <label for="cep">CEP*</label>
+      <input type="text" id="cep" maxlength="9" oninput="mascararCep(event)">
+      <p id="erro-cep" class="oculto"></p>
+
+      <label for="cidade">Cidade*</label>
+      <input type="text" id="cidade">
+      <p id="erro-cidade" class="oculto"></p>
+
+      <label for="estado">Estado (UF)*</label>
+      <input type="text" id="estado" maxlength="2">
+      <p id="erro-estado" class="oculto"></p>
+
+      <label for="curso">Curso*</label>
+      <input type="text" id="curso">
+      <p id="erro-curso" class="oculto"></p>
+
+      <label for="matricula">Matrícula*</label>
+      <input type="text" id="matricula">
+      <p id="erro-matricula" class="oculto"></p>
+
+      <label>
+        <input type="checkbox" id="termos">
+        Li e aceito os termos
+        <p id="erro-termos" class="oculto"></p>
+      </label>
+
+      <button type="submit">Enviar</button>
+      <p id="concluido" class="oculto"></p>
+
+    </form>
+  </main>
+  <footer>
+    <p>Cadastro de alunos - Aula 8</p>
+  </footer>
+</body>
+</html>
